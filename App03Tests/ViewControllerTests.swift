@@ -6,9 +6,11 @@
 //
 
 import XCTest
+@testable import App03
 
-class ViewControllerTests: XCTestCase {
+class ViewControllerTests: XCTestCase, UIImagePickerControllerDelegate {
     func testTrue() {
         XCTAssertTrue(true)
     }
 }
+

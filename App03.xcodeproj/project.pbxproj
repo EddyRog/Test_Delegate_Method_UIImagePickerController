@@ -13,7 +13,6 @@
 		93BA5DAA26A332C70022936E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BA5DA826A332C70022936E /* Main.storyboard */; };
 		93BA5DAC26A332C90022936E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BA5DAB26A332C90022936E /* Assets.xcassets */; };
 		93BA5DAF26A332C90022936E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BA5DAD26A332C90022936E /* LaunchScreen.storyboard */; };
-		93BA5DBA26A332C90022936E /* App03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BA5DB926A332C90022936E /* App03Tests.swift */; };
 		93BA5DC426A332C90022936E /* App03UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BA5DC326A332C90022936E /* App03UITests.swift */; };
 		93BA5DD226A333A60022936E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BA5DD126A333A60022936E /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +44,6 @@
 		93BA5DAE26A332C90022936E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93BA5DB026A332C90022936E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93BA5DB526A332C90022936E /* App03Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = App03Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93BA5DB926A332C90022936E /* App03Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App03Tests.swift; sourceTree = "<group>"; };
 		93BA5DBF26A332C90022936E /* App03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = App03UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BA5DC326A332C90022936E /* App03UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App03UITests.swift; sourceTree = "<group>"; };
 		93BA5DD126A333A60022936E /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 		93BA5DB826A332C90022936E /* App03Tests */ = {
 			isa = PBXGroup;
 			children = (
-				93BA5DB926A332C90022936E /* App03Tests.swift */,
 				93BA5DD126A333A60022936E /* ViewControllerTests.swift */,
 			);
 			path = App03Tests;
@@ -206,7 +203,6 @@
 					};
 					93BA5DB426A332C90022936E = {
 						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 93BA5D9E26A332C70022936E;
 					};
 					93BA5DBE26A332C90022936E = {
 						CreatedOnToolsVersion = 13.0;
@@ -277,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				93BA5DD226A333A60022936E /* ViewControllerTests.swift in Sources */,
-				93BA5DBA26A332C90022936E /* App03Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +495,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P3MRZPZ844;
@@ -517,7 +511,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App03.app/App03";
 			};
 			name = Debug;
 		};
@@ -525,7 +518,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P3MRZPZ844;
@@ -542,7 +534,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App03.app/App03";
 			};
 			name = Release;
 		};
