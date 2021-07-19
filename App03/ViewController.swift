@@ -8,9 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // Private
+    @IBOutlet private weak var pictureUIButton: UIButton!
+    @IBOutlet private weak var pictureUIImageView: UIImageView!
 
-    @IBOutlet weak var pictureUIButton: UIButton!
-    @IBOutlet weak var pictureUIImageView: UIImageView!
+    // MARK: - access to public
+    var pictureButton: UIButton {
+        pictureUIButton
+    }
+
+    var pictureImageView: UIImageView {
+        self.pictureUIImageView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,4 +29,3 @@ class ViewController: UIViewController {
         print("   ♡♥︎♡♥︎ ░█🌟 Add Picture 🥎█░ [ \(type(of: self)) L\(#line) ]")
     }
 }
-
