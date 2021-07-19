@@ -30,7 +30,7 @@ class ViewControllerTests: XCTestCase, UIImagePickerControllerDelegate {
     func test_pictureImageView_notNil() throws {
         // given
         let picture00: UIImage? = try XCTUnwrap(UIImage(systemName: "heart.fill"), "it is optionnal")
-        let picture01: UIImage? = try XCTUnwrap(UIImage(named: "Picture01"), "picture01 is optinnal")
+        let picture01: UIImage? = try XCTUnwrap(UIImage(named: "picture01"), "picture01 is optinnal")
         // picture01 = nil
 
         // when
