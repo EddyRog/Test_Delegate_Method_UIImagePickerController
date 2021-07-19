@@ -45,6 +45,7 @@ class ViewController: UIViewController {
 
             // can add new picture
             this.capturedImages.removeAll()
+            this.pictureButton.isHidden = false
         }
     }
 }
@@ -55,6 +56,7 @@ extension ViewController: UIImagePickerControllerDelegate & UINavigationControll
         self.imagePickerController.sourceType = .photoLibrary
     }
     func actionPresentPictures() {
+        self.pictureButton.isHidden = true
         self.present(imagePickerController, animated: true, completion: nil)
     }
     // delegate methods
