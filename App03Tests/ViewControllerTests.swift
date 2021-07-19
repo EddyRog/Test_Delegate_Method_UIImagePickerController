@@ -18,8 +18,6 @@ class ViewControllerTests: XCTestCase, UIImagePickerControllerDelegate {
             _ = vc.view
             sut = vc
         }
-
-
     }
     override func tearDown() {
         sut = nil
@@ -28,5 +26,19 @@ class ViewControllerTests: XCTestCase, UIImagePickerControllerDelegate {
 
     func testTrue() {
         XCTAssertTrue(true)
+    }
+    func test_pictureImageView_notNil() throws {
+        // given
+        let picture00: UIImage? = try XCTUnwrap(UIImage(systemName: "heart.fill"), "it is optionnal")
+        let picture01: UIImage? = try XCTUnwrap(UIImage(named: "Picture01"), "picture01 is optinnal")
+        // picture01 = nil
+
+        // when
+        sut.imagePickerController(sut.imagePickerController, didFinishPickingMediaWithInfo: [.originalImage: picture01 as Any])
+
+        // then
+        XCTAssertNotNil(sut.pictureImageView.image)
+        XCTAssertEqual(sut.pictureImageView.image, picture01)
+        XCTAssertNotEqual(sut.pictureImageView.image, picture00)
     }
 }
